@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:text="Second Activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView3"/>
+    <Button
+            android:text="@string/btnFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textView3"
+            android:id="@+id/btnSecondToFirst"/>
+    <Button
+            android:text="@string/btnThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSecondToThird"
+            android:layout_below="@id/textView3"
+            android:layout_toRightOf="@id/btnSecondToFirst"
+            />
+    <Button
+            android:text="@string/btnFourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSecondToFourth"
+            android:layout_below="@id/textView3"
+            android:layout_toRightOf="@id/btnSecondToThird"
+    />
+    <Button
+            android:text="@string/btnSumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="114dp"
+            android:id="@+id/btnSum"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/btnSum"
+            android:layout_toEndOf="@+id/btnSecondToFirst"
+            android:layout_alignTop="@+id/btnSum"
+            android:id="@+id/textSum"/>
+
+
+</RelativeLayout>
